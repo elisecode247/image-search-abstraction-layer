@@ -5,7 +5,7 @@ var SearchHistoryRouter = require('./controllers/sHistoryController');
 var mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://elisecode247:Goldfish2016@ds025389.mlab.com:25389/image-search');
+mongoose.connect(process.env.MONGOHQ_URL);
 
 app.use(express.static(__dirname + '/views'));
 
