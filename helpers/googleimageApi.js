@@ -1,6 +1,6 @@
 'use strict';
 
-// customized from npm google-image package
+// customized from npm google-images package
 
 var got = require('got');
 

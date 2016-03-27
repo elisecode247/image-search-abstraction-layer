@@ -1,5 +1,5 @@
 "use strict"
-const googleImages = require('./googleimageApi');
+const googleImages = require('../helpers/googleimageApi');
 var sHistoryModel = require('../models/searchHistoryModel');
 var bodyParser = require('body-parser');
 

@@ -1,8 +1,5 @@
 var sHistoryModel = require('../models/searchHistoryModel');
 
-
-
-
 module.exports = function(app) {
     app.get('/api/latest/imagesearch/', function(req, res) {
         sHistoryModel.find({}, {"_id":0,"term":1,"when":1},function(err, shistoryfound) {
